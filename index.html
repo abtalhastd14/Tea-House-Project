@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Front-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--Tailwin Css-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--Front Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <title>Tea House Project</title>
+</head>
+<body class="bg-white text-[#1E1E1E] overflow-x-hidden">
+
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="bg-white overflow-hidden">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-10 py-16 lg:py-24 min-h-[580px]">
+
+                <!-- Left Content -->
+                <div class="flex-1 max-w-[540px]">
+                
+                    <h1 class="text-[48px] lg:text-[56px] font-extrabold text-[#1E1E1E] leading-[1.12] mb-6">
+                        It's good <br> tea time at The <br> Tea House
+                    </h1>
+                    <p class="text-[#777777] text-[15px] leading-relaxed mb-10 max-w-[400px]">
+                        Experience the finest bubble teas made from fresh natural ingredients. Taste the difference with every sip.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-5">
+                        <button class="bg-linear-to-r from-[#FF7040] to-[#E03020] text-white px-8 py-4 rounded-2xl font-bold text-[16px] flex items-center gap-3 hover:opacity-90 transition-opacity shadow-md">
+                            Explore More
+                            <span class="text-[18px] leading-none">↗</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex-1 flex justify-center items-center w-full">
+                    <div class="relative w-full max-w-130">
+                        <!-- bg_cup decoration -->
+                        <img src="images/bg_cup.png" alt="" class="absolute bottom-2 left-2 w-36 opacity-10">
+                        <!-- Main drink images -->
+                        <img src="images/banner.png" alt="Tea House Drinks" class="relative z-10 w-full object-contain drop-shadow-2xl">
+                        <!-- Trust Pilot Rating Card -->
+                        <div class="absolute bottom-1 left-19 z-20 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3">
+                            <i class="fa-solid fa-star text-[#FFB800] text-3xl"></i>
+                            <div>
+                                <p class="text-[#1E1E1E] font-extrabold text-[22px] leading-tight">5.00</p>
+                                <p class="text-[#888888] text-[12px] font-medium">Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS SECTION ===== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <p class="text-[#E44630] font-bold text-[13px] uppercase tracking-[0.2em] mb-3">Our Menu</p>
+                <h2 class="text-[38px] font-extrabold text-[#1E1E1E]">Our Featured Products</h2>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
+                <!-- Product 1 -->
+                <div class="rounded-2xl border border-[#F0F0F0] p-6 text-center bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-[#FFF3EE] rounded-xl p-5 mb-5 flex items-center justify-center h-[200px] overflow-hidden">
+                        <img src="images/tea-1.png" alt="Green Tea Latte" class="h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="flex justify-center gap-[3px] mb-3">
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                    </div>
+                    <h3 class="font-bold text-[#1E1E1E] text-[17px] mb-1">Green Tea Latte</h3>
+                    <p class="text-[#E44630] font-extrabold text-[20px] mb-5">$5.50</p>
+                    <button class="w-full bg-[#E44630] text-white py-3 rounded-full font-semibold text-[13px] hover:bg-[#c93820] transition-colors">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="rounded-2xl border border-[#F0F0F0] p-6 text-center bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-[#FFF3EE] rounded-xl p-5 mb-5 flex items-center justify-center h-[200px] overflow-hidden">
+                        <img src="images/tea-2.png" alt="Strawberry Milk Tea" class="h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="flex justify-center gap-[3px] mb-3">
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-regular fa-star text-[#FFB800] text-[11px]"></i>
+                    </div>
+                    <h3 class="font-bold text-[#1E1E1E] text-[17px] mb-1">Strawberry Milk Tea</h3>
+                    <p class="text-[#E44630] font-extrabold text-[20px] mb-5">$6.00</p>
+                    <button class="w-full bg-[#E44630] text-white py-3 rounded-full font-semibold text-[13px] hover:bg-[#c93820] transition-colors">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="rounded-2xl border border-[#F0F0F0] p-6 text-center bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-[#FFF3EE] rounded-xl p-5 mb-5 flex items-center justify-center h-[200px] overflow-hidden">
+                        <img src="images/tea-3.png" alt="Mango Bubble Tea" class="h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="flex justify-center gap-[3px] mb-3">
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                    </div>
+                    <h3 class="font-bold text-[#1E1E1E] text-[17px] mb-1">Mango Bubble Tea</h3>
+                    <p class="text-[#E44630] font-extrabold text-[20px] mb-5">$6.50</p>
+                    <button class="w-full bg-[#E44630] text-white py-3 rounded-full font-semibold text-[13px] hover:bg-[#c93820] transition-colors">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="rounded-2xl border border-[#F0F0F0] p-6 text-center bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-[#FFF3EE] rounded-xl p-5 mb-5 flex items-center justify-center h-[200px] overflow-hidden">
+                        <img src="images/tea-4.png" alt="Classic Black Tea" class="h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="flex justify-center gap-[3px] mb-3">
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star text-[#FFB800] text-[11px]"></i>
+                        <i class="fa-solid fa-star-half-stroke text-[#FFB800] text-[11px]"></i>
+                    </div>
+                    <h3 class="font-bold text-[#1E1E1E] text-[17px] mb-1">Classic Black Tea</h3>
+                    <p class="text-[#E44630] font-extrabold text-[20px] mb-5">$4.50</p>
+                    <button class="w-full bg-[#E44630] text-white py-3 rounded-full font-semibold text-[13px] hover:bg-[#c93820] transition-colors">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FRESH / ABOUT SECTION ===== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+                <!-- Left: Images -->
+                <div class="flex-1 relative flex justify-center items-end min-h-[420px] max-w-[480px] w-full mx-auto lg:mx-0">
+                    <!-- Background circle -->
+                    <div class="absolute w-[380px] h-[380px] bg-[#FFF0E8] rounded-full top-0 left-1/2 -translate-x-1/2"></div>
+                    <!-- Main green drink (fresh-2) -->
+                    <img src="images/fresh-2.png" alt="Fresh Green Tea" class="relative z-10 w-[65%] object-contain drop-shadow-xl">
+                    <!-- Secondary orange drink (fresh-1) -->
+                    <img src="images/fresh-1.png" alt="Fresh Orange Tea" class="absolute bottom-0 right-0 z-20 w-[45%] object-contain drop-shadow-lg">
+                </div>
+
+                <!-- Right: Content -->
+                <div class="flex-1 max-w-[500px]">
+                    <p class="text-[#E44630] font-bold text-[13px] uppercase tracking-[0.2em] mb-4 flex items-center gap-3">
+                        <span class="inline-block w-8 h-[2px] bg-[#E44630] flex-shrink-0"></span>
+                        Fresh & Natural
+                    </p>
+                    <h2 class="text-[38px] font-extrabold text-[#1E1E1E] leading-[1.2] mb-5">
+                        Great Tea, Fruits Processed
+                    </h2>
+                    <p class="text-[#777777] text-[15px] leading-relaxed mb-8">
+                        We source only the finest, freshest ingredients to craft our signature bubble teas. Every cup is made with love and care to bring you the perfect balance of flavor and freshness.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-white text-[9px]"></i>
+                            </span>
+                            <span class="text-[#1E1E1E] font-semibold text-[15px]">100% Fresh Natural Ingredients</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-white text-[9px]"></i>
+                            </span>
+                            <span class="text-[#1E1E1E] font-semibold text-[15px]">No Artificial Colors or Preservatives</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-white text-[9px]"></i>
+                            </span>
+                            <span class="text-[#1E1E1E] font-semibold text-[15px]">Handcrafted with Love Every Time</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-white text-[9px]"></i>
+                            </span>
+                            <span class="text-[#1E1E1E] font-semibold text-[15px]">Wide Variety of Flavors to Choose From</span>
+                        </li>
+                    </ul>
+                    <button class="bg-[#E44630] text-white px-9 py-4 rounded-full font-bold text-[14px] hover:bg-[#c93820] transition-colors">
+                        Discover More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPECIAL OFFER / TESTIMONIAL SECTION ===== -->
+    <section class="py-20 bg-[#F07540]">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
+
+                <!-- Left: Content -->
+                <div class="flex-1 text-white max-w-[500px]">
+                    <p class="font-bold text-[13px] uppercase tracking-[0.2em] mb-4 flex items-center gap-3 text-white/70">
+                        <span class="inline-block w-8 h-[2px] bg-white/70 flex-shrink-0"></span>
+                        Special Offer
+                    </p>
+                    <h2 class="text-[38px] font-extrabold leading-[1.2] mb-5">
+                        Interesting Sweet Flavors
+                    </h2>
+                    <p class="text-white/80 text-[15px] leading-relaxed mb-10">
+                        Discover our most popular flavors crafted from the finest fruits. Each sip takes you on a journey of taste and absolute delight.
+                    </p>
+                    <button class="bg-white text-[#F07540] px-9 py-4 rounded-full font-bold text-[14px] hover:bg-gray-50 transition-colors">
+                        Order Now
+                    </button>
+                </div>
+
+                <!-- Right: Testimonial Card -->
+                <div class="flex-1 flex justify-center lg:justify-end">
+                    <div class="bg-white rounded-3xl p-8 max-w-[380px] w-full shadow-2xl">
+                        <!-- Stars -->
+                        <div class="flex gap-1 mb-4">
+                            <i class="fa-solid fa-star text-[#FFB800] text-[15px]"></i>
+                            <i class="fa-solid fa-star text-[#FFB800] text-[15px]"></i>
+                            <i class="fa-solid fa-star text-[#FFB800] text-[15px]"></i>
+                            <i class="fa-solid fa-star text-[#FFB800] text-[15px]"></i>
+                            <i class="fa-solid fa-star text-[#FFB800] text-[15px]"></i>
+                        </div>
+                        <!-- Quote -->
+                        <p class="text-[#555555] text-[14px] leading-relaxed mb-6">
+                            "The best bubble tea I've ever had! The flavors are incredibly fresh and the service is always amazing. I come here every single week!"
+                        </p>
+                        <!-- Client -->
+                        <div class="flex items-center gap-3">
+                            <img src="images/client.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+                            <div>
+                                <p class="font-bold text-[#1E1E1E] text-[15px]">Sarah Johnson</p>
+                                <p class="text-[#999999] text-[12px]">Regular Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWS & EVENTS SECTION ===== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <p class="text-[#E44630] font-bold text-[13px] uppercase tracking-[0.2em] mb-3">Latest Updates</p>
+                <h2 class="text-[38px] font-extrabold text-[#1E1E1E]">News & Events</h2>
+            </div>
+
+            <!-- News Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- News Card 1 -->
+                <article class="rounded-2xl overflow-hidden border border-[#F0F0F0] bg-white hover:shadow-lg transition-all duration-300">
+                    <div class="relative overflow-hidden h-[220px]">
+                        <img src="images/news-1.png" alt="Green Tea Benefits" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-[#E44630] text-white text-[11px] font-bold px-4 py-1 rounded-full">Tea Tips</span>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-[#AAAAAA] text-[12px] mb-3">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>January 15, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-[#1E1E1E] text-[18px] leading-snug mb-3">
+                            The Health Benefits of Green Tea You Need to Know
+                        </h3>
+                        <p class="text-[#777777] text-[13px] leading-relaxed mb-5">
+                            Discover how daily green tea consumption can improve your health and overall wellbeing...
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-[#E44630] font-bold text-[13px] hover:gap-3 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 2 -->
+                <article class="rounded-2xl overflow-hidden border border-[#F0F0F0] bg-white hover:shadow-lg transition-all duration-300">
+                    <div class="relative overflow-hidden h-[220px]">
+                        <img src="images/news-2.png" alt="Tea Festival" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-[#E44630] text-white text-[11px] font-bold px-4 py-1 rounded-full">Events</span>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-[#AAAAAA] text-[12px] mb-3">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>February 3, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-[#1E1E1E] text-[18px] leading-snug mb-3">
+                            Annual Tea Festival: Celebrate With Us This Spring
+                        </h3>
+                        <p class="text-[#777777] text-[13px] leading-relaxed mb-5">
+                            Join our exciting annual tea festival with special tastings and exclusive seasonal discounts...
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-[#E44630] font-bold text-[13px] hover:gap-3 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 3 -->
+                <article class="rounded-2xl overflow-hidden border border-[#F0F0F0] bg-white hover:shadow-lg transition-all duration-300">
+                    <div class="relative overflow-hidden h-[220px]">
+                        <img src="images/news-3.png" alt="Herbal Tea Blends" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-[#E44630] text-white text-[11px] font-bold px-4 py-1 rounded-full">Recipe</span>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-[#AAAAAA] text-[12px] mb-3">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>March 20, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-[#1E1E1E] text-[18px] leading-snug mb-3">
+                            New Spring Collection: Fresh Herbal Tea Blends
+                        </h3>
+                        <p class="text-[#777777] text-[13px] leading-relaxed mb-5">
+                            Introducing our newest herbal tea collection inspired by the freshness of the spring season...
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-[#E44630] font-bold text-[13px] hover:gap-3 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-[#1A1A2E] text-white">
+        <div class="max-w-[1200px] mx-auto px-6 pt-16 pb-8">
+
+            <!-- Footer Columns -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center gap-2 mb-5">
+                        <img src="images/cup.png" alt="Tea House" class="w-8 h-8 object-contain brightness-0 invert">
+                        <span class="text-[22px] font-extrabold tracking-tight">
+                            Tea<span class="text-[#E44630]">House</span>
+                        </span>
+                    </div>
+                    <p class="text-white/50 text-[13px] leading-relaxed mb-6">
+                        Experience the finest bubble teas crafted from fresh natural ingredients. Your favorite tea destination.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E44630] transition-colors">
+                            <i class="fa-brands fa-facebook-f text-[12px]"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E44630] transition-colors">
+                            <i class="fa-brands fa-x-twitter text-[12px]"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E44630] transition-colors">
+                            <i class="fa-brands fa-instagram text-[12px]"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E44630] transition-colors">
+                            <i class="fa-brands fa-youtube text-[12px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="font-extrabold text-[16px] mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Our Services -->
+                <div>
+                    <h4 class="font-extrabold text-[16px] mb-6 text-white">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Bubble Tea
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Fruit Tea
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Milk Tea
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Tea Catering
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white/50 hover:text-white transition-colors text-[14px] flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[#E44630] text-[10px]"></i> Private Events
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h4 class="font-extrabold text-[16px] mb-6 text-white">Contact Us</h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-[#E44630] mt-1 flex-shrink-0"></i>
+                            <span class="text-white/50 text-[13px] leading-relaxed">123 Tea Street, Flavor City, TC 12345</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-[#E44630] flex-shrink-0"></i>
+                            <span class="text-white/50 text-[13px]">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-[#E44630] flex-shrink-0"></i>
+                            <span class="text-white/50 text-[13px]">hello@teahouse.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-[13px]">© 2025 Tea House. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
