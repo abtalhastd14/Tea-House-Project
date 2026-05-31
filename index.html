@@ -133,62 +133,55 @@
         </div>
     </section>
 
-    <!-- ===== FRESH / ABOUT SECTION ===== -->
+    <!-- =====  ABOUT SECTION ===== -->
     <section class="py-20 bg-white">
         <div class="max-w-[1200px] mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-                <!-- Left: Images -->
-                <div class="flex-1 relative flex justify-center items-end min-h-[420px] max-w-[480px] w-full mx-auto lg:mx-0">
-                    <!-- Background circle -->
-                    <div class="absolute w-[380px] h-[380px] bg-[#FFF0E8] rounded-full top-0 left-1/2 -translate-x-1/2"></div>
-                    <!-- Main green drink (fresh-2) -->
-                    <img src="images/fresh-2.png" alt="Fresh Green Tea" class="relative z-10 w-[65%] object-contain drop-shadow-xl">
-                    <!-- Secondary orange drink (fresh-1) -->
-                    <img src="images/fresh-1.png" alt="Fresh Orange Tea" class="absolute bottom-0 right-0 z-20 w-[45%] object-contain drop-shadow-lg">
+                <!-- Left: Image Mosaic (2x2 staggered grid) -->
+                <div class="shrink-0 flex gap-3 h-[500px] w-full max-w-[480px] mx-auto lg:mx-0">
+                    <!-- Left column -->
+                    <div class="flex flex-col gap-3 flex-1">
+                        <!-- Top-left: small pink card (empty) -->
+                        <div class="h-[38%] rounded-2xl bg-[#FDE8E8]"></div>
+                        <!-- Bottom-left: tall green card with green tea -->
+                        <div class="flex-1 rounded-2xl bg-[#EEF3EE] flex items-center justify-center overflow-hidden p-3">
+                            <img src="images/fresh-2.png" alt="Green Tea" class="w-[78%] object-contain max-h-full">
+                        </div>
+                    </div>
+                    <!-- Right column -->
+                    <div class="flex flex-col gap-3 flex-1">
+                        <!-- Top-right: tall cream card with orange tea -->
+                        <div class="flex-1 rounded-2xl bg-[#FFF8E8] flex items-center justify-center overflow-hidden p-3">
+                            <img src="images/fresh-1.png" alt="Orange Tea" class="w-[78%] object-contain max-h-full">
+                        </div>
+                        <!-- Bottom-right: small gray card (empty) -->
+                        <div class="h-[38%] rounded-2xl bg-[#EFEFEF]"></div>
+                    </div>
                 </div>
 
                 <!-- Right: Content -->
-                <div class="flex-1 max-w-[500px]">
-                    <p class="text-[#E44630] font-bold text-[13px] uppercase tracking-[0.2em] mb-4 flex items-center gap-3">
-                        <span class="inline-block w-8 h-[2px] bg-[#E44630] flex-shrink-0"></span>
-                        Fresh & Natural
-                    </p>
-                    <h2 class="text-[38px] font-extrabold text-[#1E1E1E] leading-[1.2] mb-5">
-                        Great Tea, Fruits Processed
+                <div class="flex-1">
+                    <h2 class="text-[40px] font-extrabold text-[#1A1A1A] leading-[1.2] mb-5">
+                        Great Tea, Freshly<br>Presented
                     </h2>
                     <p class="text-[#777777] text-[15px] leading-relaxed mb-8">
-                        We source only the finest, freshest ingredients to craft our signature bubble teas. Every cup is made with love and care to bring you the perfect balance of flavor and freshness.
+                        The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions. It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers because of good words of mouth and unique customized service orginated from Taiwan.
                     </p>
-                    <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4">
-                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-white text-[9px]"></i>
-                            </span>
-                            <span class="text-[#1E1E1E] font-semibold text-[15px]">100% Fresh Natural Ingredients</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-white text-[9px]"></i>
-                            </span>
-                            <span class="text-[#1E1E1E] font-semibold text-[15px]">No Artificial Colors or Preservatives</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-white text-[9px]"></i>
-                            </span>
-                            <span class="text-[#1E1E1E] font-semibold text-[15px]">Handcrafted with Love Every Time</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <span class="w-6 h-6 rounded-full bg-[#E44630] flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-white text-[9px]"></i>
-                            </span>
-                            <span class="text-[#1E1E1E] font-semibold text-[15px]">Wide Variety of Flavors to Choose From</span>
-                        </li>
-                    </ul>
-                    <button class="bg-[#E44630] text-white px-9 py-4 rounded-full font-bold text-[14px] hover:bg-[#c93820] transition-colors">
-                        Discover More
-                    </button>
+                    <!-- Feature: Unique Taste -->
+                    <div class="mb-6">
+                        <h3 class="text-[17px] font-extrabold text-[#1A1A1A] mb-2">Unique Taste</h3>
+                        <p class="text-[#777777] text-[15px] leading-relaxed">
+                            A Unique and different style from other teapots gives a luxurious and minimalist impression
+                        </p>
+                    </div>
+                    <!-- Feature: Premium Quality -->
+                    <div>
+                        <h3 class="text-[17px] font-extrabold text-[#1A1A1A] mb-2">Premium Quality</h3>
+                        <p class="text-[#777777] text-[15px] leading-relaxed">
+                            Premium Quality that makes tea more elegant and more durable when you use it.
+                        </p>
+                    </div>
                 </div>
 
             </div>
